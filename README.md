@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+1) ng new {{Project name}}
+2) Create repository
+3) git init
+4) git add .
+5) git commit -m "initial commit"
+6) git remote add origin {{remote repository URL}}
+7) git remote -v
+8) git push -f origin master
+9) git config --global user.name "FirstName LastName"
+10) git config user.name
+11) git config --global user.email "Mail@mail"
+12) git config user.email
