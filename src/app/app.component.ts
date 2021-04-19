@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  selector: 'g-root',
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'g-playground';
+
 }
