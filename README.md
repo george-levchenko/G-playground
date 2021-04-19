@@ -22,3 +22,4 @@ Git:
 Dependencies:
 1) ng add @angular/material https://material.angular.io/
 2) npm install bootstrap@next https://getbootstrap.com/
+3) npm install --save @fortawesome/fontawesome-free  https://fontawesome.com/
