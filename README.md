@@ -31,3 +31,5 @@ Dependencies:
 2) npm install bootstrap@next https://getbootstrap.com/
 3) npm install @fortawesome/fontawesome-free --save https://fontawesome.com/
 4) npm install @ngx-translate/core @ngx-translate/http-loader rxjs --save https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate
+5) npm install @ngneat/until-destroy https://www.npmjs.com/package/@ngneat/until-destroy
+6) npm install ngx-infinite-scroll https://www.npmjs.com/package/ngx-infinite-scroll
