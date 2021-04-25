@@ -2,13 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {EffectsModule} from '@ngrx/effects';
+import {StoreRouterConnectingModule} from '@ngrx/router-store';
+import {StoreModule} from '@ngrx/store';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
+
+import {gStoreEffects, gStoreReducers} from './common/store';
+import {environment} from '../environments/environment';
+import {HttpLoaderFactory} from './common/utils';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { GPlaceholderModule } from './modules/placeholder/placeholder.module';
 import { GCommonsModule } from './modules/commons/commons.module';
+
 
 
 @NgModule({
@@ -18,6 +26,13 @@ import { GCommonsModule } from './modules/commons/commons.module';
     HttpClientModule,
     AppRoutingModule,
 
+    StoreModule.forRoot(gStoreReducers, {metaReducers: []}),
+    EffectsModule.forRoot(gStoreEffects),
+    StoreRouterConnectingModule.forRoot(),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25,
+      logOnly: environment.production
+    }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -34,7 +49,3 @@ import { GCommonsModule } from './modules/commons/commons.module';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
-}
