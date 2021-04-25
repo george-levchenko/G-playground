@@ -21,14 +21,13 @@ Git (versions control) https://github.com:
 
 State Management NgRx https://ngrx.io/docs:
 1) npm install @ngrx/router-store --save
-2) npm install @ngrx/store-devtools --save
-3) npm install @ngrx/effects --save
-4) npm install @ngrx/router-store --save 
-5) npm install @ngrx/entity --save
+2) npm install @ngrx/effects --save
+3) npm install @ngrx/router-store --save 
+4) npm install @ngrx/entity --save
+5) npm install @ngrx/store-devtools --save
 
 Dependencies:
 1) ng add @angular/material https://material.angular.io/
 2) npm install bootstrap@next https://getbootstrap.com/
-3) npm install --save @fortawesome/fontawesome-free  https://fontawesome.com/
+3) npm install @fortawesome/fontawesome-free --save https://fontawesome.com/
 4) npm install @ngx-translate/core @ngx-translate/http-loader rxjs --save https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate
-5) 
