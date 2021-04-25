@@ -18,7 +18,6 @@ import { GPlaceholderModule } from './modules/placeholder/placeholder.module';
 import { GCommonsModule } from './modules/commons/commons.module';
 
 
-
 @NgModule({
   imports: [
     BrowserModule,
