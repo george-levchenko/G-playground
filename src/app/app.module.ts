@@ -15,8 +15,7 @@ import {HttpLoaderFactory} from './common/utils';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { GPlaceholderModule } from './modules/placeholder/placeholder.module';
-import { GCommonsModule } from './modules/commons/commons.module';
-
+import { GCoreModule } from './modules/core/core.module';
 
 @NgModule({
   imports: [
@@ -40,7 +39,7 @@ import { GCommonsModule } from './modules/commons/commons.module';
       }
     }),
 
-    GCommonsModule,
+    GCoreModule,
     GPlaceholderModule
   ],
   providers: [],
