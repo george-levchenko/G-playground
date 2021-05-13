@@ -29,7 +29,8 @@ State Management NgRx https://ngrx.io/docs:
 Dependencies:
 1) ng add @angular/material https://material.angular.io/
 2) npm install bootstrap https://getbootstrap.com/
-3) npm install @fortawesome/fontawesome-free --save https://fontawesome.com/
-4) npm install @ngx-translate/core @ngx-translate/http-loader rxjs --save https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate
-5) npm install @ngneat/until-destroy https://www.npmjs.com/package/@ngneat/until-destroy
-6) npm install ngx-infinite-scroll https://www.npmjs.com/package/ngx-infinite-scroll
+3) npm install bootstrap-icons https://icons.getbootstrap.com/
+4) npm install @fortawesome/fontawesome-free --save https://fontawesome.com/
+5) npm install @ngx-translate/core @ngx-translate/http-loader rxjs --save https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate
+6) npm install @ngneat/until-destroy https://www.npmjs.com/package/@ngneat/until-destroy
+7) npm install ngx-infinite-scroll https://www.npmjs.com/package/ngx-infinite-scroll
