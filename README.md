@@ -34,3 +34,7 @@ Dependencies:
 5) npm install @ngx-translate/core @ngx-translate/http-loader rxjs --save https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate
 6) npm install @ngneat/until-destroy https://www.npmjs.com/package/@ngneat/until-destroy
 7) npm install ngx-infinite-scroll https://www.npmjs.com/package/ngx-infinite-scroll
+
+ToDo:
+1) Add ESLint, Prettier, Husky... https://habr.com/ru/company/ruvds/blog/428173/ with rules https://github.com/airbnb/javascript.
+2) Cover with Unit and e2e tests.
