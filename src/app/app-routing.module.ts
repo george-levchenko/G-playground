@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'author', component: GEmptyComponent, canActivate: [] },
   { path: 'login', component: GEmptyComponent },
   { path: 'welcome', component: GPlaceholderComponent },
+  { path: '404', component: GPageNotFoundComponent },
   { path: '',   redirectTo: 'welcome', pathMatch: 'full' },
   { path: '**', component: GPageNotFoundComponent }
 ];
@@ -19,4 +20,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

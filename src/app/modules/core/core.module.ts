@@ -6,6 +6,7 @@ import { GWelcomeComponent } from './welcome/welcome.component';
 import {GFooterComponent} from './footer/footer.component';
 import {GHeaderComponent} from './header/header.component';
 import {RouterModule} from '@angular/router';
+import {TranslateModule} from '@ngx-translate/core';
 
 const components = [
   GFooterComponent,
@@ -18,7 +19,9 @@ const components = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+
+    TranslateModule
   ],
   declarations: [components],
   exports: [components]
