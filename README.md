@@ -31,10 +31,11 @@ Dependencies:
 1) ng add @angular/material https://material.angular.io/
 2) npm install bootstrap https://getbootstrap.com/
 3) npm install bootstrap-icons https://icons.getbootstrap.com/
-4) npm install @fortawesome/fontawesome-free --save https://fontawesome.com/
-5) npm install @ngx-translate/core @ngx-translate/http-loader rxjs --save https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate
-6) npm install @ngneat/until-destroy https://www.npmjs.com/package/@ngneat/until-destroy
-7) npm install ngx-infinite-scroll https://www.npmjs.com/package/ngx-infinite-scroll
+4) npm install ng-zorro-antd --save https://ng.ant.design/components/overview/en
+5) npm install @fortawesome/fontawesome-free --save https://fontawesome.com/
+6) npm install @ngx-translate/core @ngx-translate/http-loader rxjs --save https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate
+7) npm install @ngneat/until-destroy https://www.npmjs.com/package/@ngneat/until-destroy
+8) npm install ngx-infinite-scroll https://www.npmjs.com/package/ngx-infinite-scroll
 
 ToDo:
 1) Add ESLint, Prettier, Husky... https://habr.com/ru/company/ruvds/blog/428173/ with rules https://github.com/airbnb/javascript.
