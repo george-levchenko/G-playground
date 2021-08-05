@@ -4,7 +4,8 @@ CLI:
 3) Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 4) Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 5) Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-6) To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+6) Run `ng help` to get more help on the Angular CLI or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli).
+7) Run `ng update` to update dependencies.
 
 Git (versions control) https://github.com:
 1) Create repository https://github.com/george-levchenko/G-playground
