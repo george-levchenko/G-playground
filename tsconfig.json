@@ -19,7 +19,11 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "assets": ["src/assets"],
+      "styles": ["src/styles"]
+    }
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,

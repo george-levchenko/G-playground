@@ -1,30 +1,66 @@
-<div style="width: 100%;
-  height: 60px;
-  text-align: center;
-  border-bottom: 5px solid darkslategray;
-  padding-top: 17px;">
+<div nz-row nzJustify="space-between">
+  <div nz-col nz-row>
+    <nz-avatar
+      class="logo"
+      [nzSize]="60"
+      nzSrc="../../../../assets/svg/logo.svg"
+      nzAlt="logo"
+      routerLink="/welcome">
+    </nz-avatar>
 
-  <button
-    class="btn"
-    routerLink="/welcome"
-    routerLinkActive="btn-primary"
-    [routerLinkActiveOptions]="{exact:true}">Home
-  </button>
-  <button
-    class="btn"
-    routerLink="/movies"
-    routerLinkActive="btn-primary"
-    [routerLinkActiveOptions]="{exact:true}">
-    Movies
-  </button>
-  <button
-    class="btn"
-    routerLink="/movies/vata"
-    routerLinkActive="btn-primary"
-    [routerLinkActiveOptions]="{exact:true}">
-    MoviesId
-  </button>
-  <button class="btn" routerLink="/gallery" routerLinkActive="btn-primary">Gallery</button>
-  <button class="btn" routerLink="/login" routerLinkActive="btn-primary">Login</button>
-  <button class="btn" routerLink="/vata" routerLinkActive="btn-primary">Vata</button>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal">
+      <li nz-menu-item nzMatchRouter nzMatchRouterExact>
+        <a routerLink="/welcome">Home</a>
+      </li>
+      <li nz-menu-item nzMatchRouter nzMatchRouterExact>
+        <a routerLink="/movies">Movies</a>
+      </li>
+      <li nz-menu-item nzMatchRouter nzMatchRouterExact>
+        <a routerLink="/gallery">Empty</a>
+      </li>
+      <li nz-menu-item nzMatchRouter nzMatchRouterExact>
+        <a routerLink="/vata">404</a>
+      </li>
+    </ul>
+  </div>
+
+  <div nz-col nz-row nzAlign="middle">
+
+    <div class="language" nz-row nzAlign="middle">
+      <nz-select
+        nzSize="large"
+        [nzShowArrow]="false"
+        [nzCustomTemplate]="languageTemplate"
+        [(ngModel)]="language.value">
+        <nz-option
+          *ngFor="let language of languages"
+          [nzLabel]="language.label"
+          [nzValue]="language.value"
+          nzCustomContent>
+          <i class="fas fa-moon"></i> {{language.label}}
+        </nz-option>
+      </nz-select>
+      <ng-template #languageTemplate let-selected><i class="fas fa-sun"></i> {{selected.nzLabel}}</ng-template>
+    </div>
+
+    <div class="theme">
+      <nz-switch
+        [(ngModel)]="whiteTheme"
+        [nzCheckedChildren]="checkedTemplate"
+        [nzUnCheckedChildren]="unCheckedTemplate"
+      ></nz-switch>
+      <ng-template #checkedTemplate><i class="fas fa-sun"></i></ng-template>
+      <ng-template #unCheckedTemplate><i class="fas fa-moon"></i></ng-template>
+    </div>
+
+    <div class="notifications">
+      <i nz-icon nzType="bell" nzTheme="fill"></i>
+    </div>
+
+    <nz-avatar
+      class="user"
+      nzSize="large"
+      nzIcon="user">
+    </nz-avatar>
+  </div>
 </div>

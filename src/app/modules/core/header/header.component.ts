@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {UntilDestroy} from '@ngneat/until-destroy';
 
 @Component({
@@ -10,9 +10,17 @@ import {UntilDestroy} from '@ngneat/until-destroy';
 @UntilDestroy({ checkProperties: true})
 export class GHeaderComponent implements OnInit {
 
-  constructor() { }
+  whiteTheme = false;
+  languages = [
+    {label: 'russian', value: 'ru'},
+    {label: 'english', value: 'eng'},
+    {label: 'spanish', value: 'sp'}
+  ];
+  language: any;
+
+  constructor(private readonly cdr: ChangeDetectorRef) { }
 
   ngOnInit(): void {
+    this.language = this.languages[1];
   }
-
 }

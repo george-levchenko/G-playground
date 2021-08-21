@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { GPlaceholderModule } from './modules/placeholder/placeholder.module';
 import { GCoreModule } from './modules/core/core.module';
+import {GZorroModule} from './common/zorro.module';
 
 @NgModule({
   imports: [
@@ -39,9 +40,12 @@ import { GCoreModule } from './modules/core/core.module';
       }
     }),
 
+    GZorroModule,
+
     GCoreModule,
     GPlaceholderModule
   ],
+  exports: [GZorroModule],
   providers: [],
   declarations: [AppComponent],
   bootstrap: [AppComponent]

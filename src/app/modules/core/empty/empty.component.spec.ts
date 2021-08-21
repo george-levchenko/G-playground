@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmptyComponent } from './empty.component';
+import { GEmptyComponent } from './empty.component';
 
 describe('EmptyComponent', () => {
-  let component: EmptyComponent;
-  let fixture: ComponentFixture<EmptyComponent>;
+  let component: GEmptyComponent;
+  let fixture: ComponentFixture<GEmptyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EmptyComponent ]
+      declarations: [ GEmptyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EmptyComponent);
+    fixture = TestBed.createComponent(GEmptyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

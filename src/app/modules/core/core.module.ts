@@ -7,6 +7,8 @@ import {GFooterComponent} from './footer/footer.component';
 import {GHeaderComponent} from './header/header.component';
 import {RouterModule} from '@angular/router';
 import {TranslateModule} from '@ngx-translate/core';
+import {GZorroModule} from '../../common/zorro.module';
+import {FormsModule} from '@angular/forms';
 
 const components = [
   GFooterComponent,
@@ -20,8 +22,10 @@ const components = [
   imports: [
     CommonModule,
     RouterModule,
+    FormsModule,
 
-    TranslateModule
+    TranslateModule,
+    GZorroModule
   ],
   declarations: [components],
   exports: [components]
