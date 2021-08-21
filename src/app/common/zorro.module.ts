@@ -12,6 +12,8 @@ import {NzAvatarModule} from 'ng-zorro-antd/avatar';
 import {NzIconModule} from 'ng-zorro-antd/icon';
 import {NzSwitchModule} from 'ng-zorro-antd/switch';
 import {NzSelectModule} from 'ng-zorro-antd/select';
+import {NzToolTipModule} from 'ng-zorro-antd/tooltip';
+import {NzModalModule} from 'ng-zorro-antd/modal';
 
 const icons: IconDefinition[] = [ UserOutline, BellFill ];
 
@@ -26,7 +28,9 @@ const icons: IconDefinition[] = [ UserOutline, BellFill ];
     NzButtonModule,
     NzAvatarModule,
     NzSwitchModule,
-    NzSelectModule
+    NzSelectModule,
+    NzToolTipModule,
+    NzModalModule
   ],
   exports: [
     NzIconModule,
@@ -36,7 +40,9 @@ const icons: IconDefinition[] = [ UserOutline, BellFill ];
     NzButtonModule,
     NzAvatarModule,
     NzSwitchModule,
-    NzSelectModule
+    NzSelectModule,
+    NzToolTipModule,
+    NzModalModule
   ]
 })
 export class GZorroModule { }

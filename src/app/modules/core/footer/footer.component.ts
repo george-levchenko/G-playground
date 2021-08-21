@@ -8,6 +8,8 @@ import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 })
 export class GFooterComponent implements OnInit {
 
+  showAuthorModal = false;
+
   constructor() { }
 
   ngOnInit(): void {

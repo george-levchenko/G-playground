@@ -3,9 +3,11 @@
     <nz-avatar
       class="logo"
       [nzSize]="60"
-      nzSrc="../../../../assets/svg/logo.svg"
+      nzSrc="./assets/svg/logo.svg"
       nzAlt="logo"
-      routerLink="/welcome">
+      routerLink="/welcome"
+      nz-tooltip="Home"
+      nzTooltipPlacement="bottom">
     </nz-avatar>
 
     <ul nz-menu nzTheme="dark" nzMode="horizontal">
@@ -26,7 +28,12 @@
 
   <div nz-col nz-row nzAlign="middle">
 
-    <div class="language" nz-row nzAlign="middle">
+    <div
+      class="language"
+      nz-row
+      nzAlign="middle"
+      nz-tooltip="Language"
+      nzTooltipPlacement="bottom">
       <nz-select
         nzSize="large"
         [nzShowArrow]="false"
@@ -43,7 +50,10 @@
       <ng-template #languageTemplate let-selected><i class="fas fa-sun"></i> {{selected.nzLabel}}</ng-template>
     </div>
 
-    <div class="theme">
+    <div
+      class="theme"
+      nz-tooltip="Theme"
+      nzTooltipPlacement="bottom">
       <nz-switch
         [(ngModel)]="whiteTheme"
         [nzCheckedChildren]="checkedTemplate"
@@ -53,14 +63,19 @@
       <ng-template #unCheckedTemplate><i class="fas fa-moon"></i></ng-template>
     </div>
 
-    <div class="notifications">
+    <div
+      class="notifications"
+      nz-tooltip="Notifications"
+      nzTooltipPlacement="bottom">
       <i nz-icon nzType="bell" nzTheme="fill"></i>
     </div>
 
     <nz-avatar
       class="user"
       nzSize="large"
-      nzIcon="user">
+      nzIcon="user"
+      nz-tooltip="Profile"
+      nzTooltipPlacement="bottom">
     </nz-avatar>
   </div>
 </div>
