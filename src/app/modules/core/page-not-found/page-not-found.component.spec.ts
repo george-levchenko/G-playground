@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GPageNotFoundComponent } from './page-not-found.component';
+import {TranslateModule} from '@ngx-translate/core';
 
 describe('GPageNotFoundComponent', () => {
   let component: GPageNotFoundComponent;
@@ -8,6 +9,7 @@ describe('GPageNotFoundComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [TranslateModule.forRoot()],
       declarations: [ GPageNotFoundComponent ]
     })
     .compileComponents();

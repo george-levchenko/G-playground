@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GPlaceholderComponent } from './placeholder.component';
+import {TranslateModule} from '@ngx-translate/core';
 
 describe('GPlaceholderComponent', () => {
   let component: GPlaceholderComponent;
@@ -8,6 +9,7 @@ describe('GPlaceholderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [TranslateModule.forRoot()],
       declarations: [ GPlaceholderComponent ]
     })
     .compileComponents();
